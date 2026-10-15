@@ -27,7 +27,7 @@ jobs:
           xcodebuild -version
           xcrun --sdk iphoneos --show-sdk-version
 
-      - name: Local signing config (unsigned: no team, no paid-only entitlements)
+      - name: Local signing config - unsigned, no team, no paid-only entitlements
         working-directory: ios
         run: |
           cat > Config/Local.xcconfig <<'EOF'
